@@ -122,6 +122,8 @@ header .button-menu #login{
 }
 
 
+
+
 /* ====== footer do article ====== */
 
 .news-footer{
@@ -238,7 +240,7 @@ footer{
 .navegacao-footer a:hover,
 .categories-footer a:hover,
 .legal-footer a:hover{
-    color: #0d6efd;
+    color: var(--neon-blue);
 }
 
 /* parte final */
