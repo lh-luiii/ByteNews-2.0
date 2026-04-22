@@ -21,7 +21,7 @@
 :root {
   /* Fundo */
   --bg-primary: #010626;
-  --bg-secondary: #0F172A;
+  --bg-secondary: #0e1420;
   --bg-card: #111827;
 
   /* Neon / Destaque */
@@ -31,8 +31,7 @@
   --neon-green: #00FF9C;
 
   /* Gradientes comuns */
-  --gradient-primary: linear-gradient(90deg, #00E5FF, #A855F7);
-  --gradient-secondary: linear-gradient(90deg, #FF2D9A, #00E5FF);
+  --gradient-primary: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
 
   /* Texto */
   --text-primary: #e4e4e4;
@@ -49,16 +48,29 @@
   --btn-hover: #00C4D6;
 }
 
-header {
+header{
   backdrop-filter: blur(10px);
-  background-color:var(--bg-primary);
+  background-color: var(--bg-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 20px 0;
   padding: 5px 15px;
   height: 60px;
-} 
+  position: relative; /* IMPORTANTE */
+}
+
+/* linha neon */
+header::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
+}
+
 
 header #logo {
   width: 200px;
@@ -113,7 +125,13 @@ header .button-menu #login{
   box-shadow: 0 0 10px #00f0ff50;
 }
 
+body{
+    background: var(--bg-primary);
+}
+
 /*Main*/
+
+
 
 main {
   width: 100%;
@@ -138,11 +156,19 @@ main .container .carousel-main {
 
 
 /* rodape */
+
 footer{
     background: var(--bg-primary);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-primary);
     margin-top: 40px;
+}
+
+footer::before{
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
 }
 
 /* container principal */
