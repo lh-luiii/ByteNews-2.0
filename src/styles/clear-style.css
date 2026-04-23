@@ -6,52 +6,6 @@ body.clear{
   background-color: #08090a;
 }
 
-body.clear header, body.clear footer{
-  background-color: #012340;
-  color: #05f2f2;
-}
 
-body.clear header .menu a {
-  color: #05f2f2;
-}
 
-body.clear header .menu button{
-  background-color: #05F2F2
-}
-
-body.clear header .menu button a{
-  color: #012340;
-}
-
-body.clear main{
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-}
-
-body.clear .noticias .caixao{
-  background-color: #012340;
-}
-
-body.clear #sobre .caixa{
-  background-color: #012340;
-}
-
-body.clear #sobre .caixa h1{
-  color: #05F2F2;
-}
-
-body.clear #sobre .caixa p{
-  color:#05DBF2;
-}
-
-body.clear .contatos .contato{
-  background-color: #0e3d59;
-}
-body.clear .contatos .contato h2{
-  color: #05F29B;
-}
-
-body.clear button#tema .theme-icon {
-  filter: invert(1);
-}
+ 
