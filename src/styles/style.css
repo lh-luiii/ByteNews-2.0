@@ -154,9 +154,9 @@ main .container .carousel-main {
 }
 
 #carouselMain .carousel-inner h5{
-    font-size: 80px;
-    text-shadow: 7px 6px 10px var(--neon-purple2);
-    color: var(--neon-blue);
+    font-size: 40px;
+    text-shadow: 7px 6px 10px var(--bg-primary);
+    color: var(--text-primary);
 }
 
 .container img{
