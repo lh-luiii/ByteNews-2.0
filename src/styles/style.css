@@ -61,18 +61,19 @@ header{
 }
 
 /* linha neon */
-header::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
+header:after{
+    content:"";
+    position:absolute;
+    bottom:-6px;
+    left:0;
+    width:100%;
+    height:3px;
+    border-radius:10px;
+    background: linear-gradient(90deg,#00e5ff,#0066ff,#00e5ff);
 }
 
 
-header #logo {
+header #logoHeader {
   width: 200px;
 }
 
@@ -158,6 +159,9 @@ main .container .carousel-main {
     color: var(--neon-blue);
 }
 
+.container img{
+    border-radius:12px;
+}
 
 /* rodape */
 
@@ -194,7 +198,7 @@ footer::before{
 }
 
 /* logo */
-.logo-footer img{
+footer #logoFooter{
     width: 250px;
     margin-bottom: 20px;
 }
