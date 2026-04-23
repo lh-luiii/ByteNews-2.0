@@ -131,8 +131,6 @@ body{
 
 /*Main*/
 
-
-
 main {
   width: 100%;
   height: auto;
@@ -150,8 +148,14 @@ main .container {
 }
 
 main .container .carousel-main {
-  width: 80%;
+  width: 89%;
   height: auto;
+}
+
+#carouselMain .carousel-inner h5{
+    font-size: 80px;
+    text-shadow: 7px 6px 10px var(--neon-purple2);
+    color: var(--neon-blue);
 }
 
 
